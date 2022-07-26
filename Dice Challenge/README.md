@@ -1,3 +1,3 @@
 # Dice Challenge
 
-A dice game made using HTML, CSS & JavaScript.
+A dice game made using HTML & CSS.
