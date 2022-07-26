@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .section{
+            height: 100vh;   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #calculator{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .nums{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .input{
+            width: 50%;
+            margin: 30px 10px 0px 10px;
+        }
+        .select{
+            margin-bottom: 30px;
+        }
+        .button{
+            margin-bottom: 30px;
+        }
+    </style>
+  </head>
+  
+  <body>
+  <section class="section has-background-primary">
+
+    <div class="parentCont is-fullheight">
+        <div class="container is-max-desktop level-item ">
+            <div class="notification is-primary has-background-primary-light">
+                <h1 class="has-text-primary level-item is-size-2 is-family-code">
+                    <b>Calculator</b>
+                </h1>
+              <form id="calculator">
+                <div class="nums">
+                    <input type="number" placeholder="1st Number" name="number1" class="input is-primary" required>
+                    <input type="number" placeholder="2nd Number" name ="number2" class="input is-primary" required>
+                </div>
+                <div class="select is-success">
+                    <select name="operation" id="operation" required>
+                        <option value="" disabled selected>Operation</option>
+                        <option name="operation" value="+" id="+">+</option>
+                        <option name="operation" id="-" value="-">-</option>
+                        <option name="operation" id="*" value="*">*</option>
+                        <option name="operation" id="/" value="/">/</option>
+                    </select>
+                </div>
+                  <button class="button is-primary is-outlined">Submit</button>
+                <div class="cont has-text-primary-dark level-item is-size-6 is-family-primary">
+                    
+                </div>
+            </form>
+            </div>
+          </div>
+    </div>
+  </section>
+  <script src="/app.js"></script>
+  </body>
+</html>
+
+
