@@ -1,3 +1,3 @@
 # Mini-Projects
 
-In this repo, we will make some basic Web Development projects for beginners.
+In this repo, we will make some basic Web Development projects.
